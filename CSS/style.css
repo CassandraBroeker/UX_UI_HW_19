@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 100vw;
+}
+.navigation{
+    background-color: #FF9431;
+    padding: 1vh 5vw;
+
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+}
+.logo {
+width: 4vw; 
+height: auto;
+text-align: left;
+background-image:linear-gradient(180deg, rgba(255, 148, 49, 0.2) 0%, rgba(255, 148, 49, 0) 100%),
+/* outline: 1px solid red; */
+}
+
+nav{
+margin-left:auto;
+/* outline: 1px solid red; */
+/* width: 83%; */
+
+}
+nav ul {
+    display: flex;
+    align-self: center;
+    justify-self: right;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-family:'Work Sans,' sans-serif;
+    
+}
+ul li {
+padding: 0 3vw;
+font-size: 1.5vw;
+
+}
+.heroSection {
+    width: 100vw;
+    padding: 7vw 15vw;
+    /* background-color: chartreuse; */
+    text-align: center;
+}
+.heroSection p {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Work Sans,' sans-serif;
+}
+
+.heroSection img{
+    height: 250px;
+    width: auto;
+    margin-bottom: 3vh;
+
+}
+
+button {
+    margin-top: 3vh;
+    cursor: pointer;
+    padding: .5vh 1vw;
+    background-color: black;
+    color: white;
+    font-family:'Work Sans,' sans-serif;
+    font-size: 20px;
+    max-width: fit-content;
+}
+.mySkills {
+    text-align: center;
+    margin: 2vh;
+    margin-top: 3vh;
+}
+.flexContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 2vw;
+    height: auto;
+    min-height: 40vw;
+
+}
+.flexContainer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    max-width: 30vw;
+    padding: 1vh 2vw;
+    box-shadow: 5px 10px 10px #d4d4d4;
+
+}
+
+.flexContainer div img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    
+    
+}
+
+.flexContainer div h3 {
+text-align: center;
+}
+.workGrid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    width: 100vw;
+    height: auto;
+    margin-bottom: 5vh;
+    /* background-color: darkseagreen; */
+}
+.workGrid .work1{
+    grid-column: 1/9;
+    grid-row: 1/2;
+    /* background-color: darkorchid; */
+}
+.workGrid .work2{
+    grid-column: 1/9;
+    grid-row: 2/3;
+}
+.workGrid .work3{
+    grid-column: 1/9;
+    grid-row: 3/4;
+}
+.workGrid div {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);   
+    grid-auto-rows: minmax(100px, 200px);
+}
+.work1 img {
+    grid-column: 1/4;
+    /* background-color: chartreuse; */
+}
+.work1 div {
+    grid-column: 4/9;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+   /* background-color: cyan; */
+}
+.work2 img {
+    grid-column: 1/4;
+    /* background-color: chartreuse; */
+}
+.work2 div {
+    grid-column: 4/9;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+   /* background-color: cyan; */
+}
+.work3 img {
+    grid-column: 1/4;
+    /* background-color: chartreuse; */
+}
+.work3 div {
+    grid-column: 4/9;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+   /* background-color: cyan; */
+}
+
+
+.workGrid img {
+    /* max-width: 10vw; */
+    max-height: 75%;
+    width: auto;
+    align-self: center;
+    justify-self: right;
+    padding-right: 4vw;
+}
+
+footer {
+/* position: fixed; */
+bottom: 0;
+height: 10vh;
+background-color: #FF9431;
+width: 100vw;
+display: grid;
+}
+
+footer ul {
+align-self: center;
+display: flex;
+}
+footer ul li {
+    list-style: none;
+}
+@media (max-width: 600px){
+    .flexContainer {
+        flex-direction: column;
+      
+    }
+    .flexContainer div {
+        width: 100%;
+        margin: 2vh auto;
+        max-width: 70vw;
+    }
+}
